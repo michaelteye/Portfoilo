@@ -1256,7 +1256,13 @@ a.image {
     -webkit-transform: scale(1.075);
     -ms-transform: scale(1.075);
     transform: scale(1.075); }
-
+#img{
+  width: 200px; 
+  height: 200px;
+  /* object-fit: cover;  */
+  object-fit: cover;
+  object-position: 80% 50%;
+}
 /* List */
 ol {
   list-style: decimal;
@@ -2141,15 +2147,19 @@ button,
     width: 50%; }
     #banner .image img {
       height: 100%;
-      -moz-object-fit: cover;
-      -webkit-object-fit: cover;
-      -ms-object-fit: cover;
+      /* -moz-object-fit: cover; */
+      /* -webkit-object-fit: cover; */
+      /* -ms-object-fit: cover; */
       object-fit: cover;
-      -moz-object-position: center;
-      -webkit-object-position: center;
-      -ms-object-position: center;
+      /* -moz-object-position: center; */
+      /* -webkit-object-position: center; */
+      /* -ms-object-position: center; */
       object-position: center;
       width: 100%; }
+      .image img {
+        border-radius: 0.37em;
+        display: block;
+      }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
